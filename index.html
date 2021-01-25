@@ -65,7 +65,7 @@ t(){
   sj(bd,code,code,sss.code)
   hd("https://pic.baike.soso.com/ugc/baikepic2/99/cut-20191229163159-683136713_jpg_416_519_60468.jpg/300","iApp/Userimg/icon.png",true,icon)
   ufnsui(){
-    fd("$pd",pd)
+    fd("Ace/pd",pd)
     fdir("@",xm)
     fdir(mh)
     ss(mh+"/",mh)
@@ -76,21 +76,21 @@ t(){
     for(xm;fg){
       f(xm!=""){
         f(xm=="res"){
-          fr("$pd",pd)
+          fr("Ace/pd",pd)
           ss(sz+":",head)
           ss(":"+sz,tail)
           sj(pd,head,tail,xm)
-          fw("$Source",xm)
+          fw("Ace/Source",xm)
         }else{
           fe("$pd",pd)
           f(pd=="true"){
-            s wb="$pd"
+            s wb="Ace/pd"
             fr(wb,nr)
             s+(1,sz)
             ss(nr+"\n"+sz+":"+xm+":"+sz,xm)
             fw(wb,xm)
           }f(pd=="false"){
-            s wb="$pd"
+            s wb="Ace/pd"
             s+(1,sz)
             ss(sz+":"+xm+":sz",xm)
             fw(wb,xm)
@@ -98,7 +98,7 @@ t(){
         }
       }
     }
-    fr("$Source",path)
+    fr("Ace/Source",path)
     fdir("@",dir)
     ss(path+"/res/",path)
     sr(dir,path,"",path)
